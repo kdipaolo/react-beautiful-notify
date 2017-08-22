@@ -4,7 +4,6 @@ import Toast from './components/Toast'
 import Container from './components/Container'
 import { defaults } from './defaults'
 
-/* Render React component */
 function renderToast(text, options, confirm) {
   let target = document.getElementById(defaults.wrapperId)
 
@@ -19,24 +18,21 @@ function renderToast(text, options, confirm) {
   )
 }
 
-/* Unmount React component */
 function hide() {
   let target = document.getElementById(defaults.wrapperId)
   ReactDOM.unmountComponentAtNode(target)
 }
 
 function show(text, options, confirm) {
-  // Use default timeout if not set.
-  let renderTimeout = options.timeout || defaults.timeout
+  const mergedOptions = Object.assign(defaults, options)
 
-  // Render Component with Props.
-  renderToast(text, options, renderTimeout, confirm)
+  renderToast(text, mergedOptions, confirm)
 
-  if (options.type !== 'confirmation') {
+  if (mergedOptions.type !== 'confirmation') {
     // Unmount react component after the animation finished.
     setTimeout(function() {
       hide()
-    }, renderTimeout + defaults.animationDuration)
+    }, mergedOptions.timeout + mergedOptions.animationDuration)
   }
   return true
 }

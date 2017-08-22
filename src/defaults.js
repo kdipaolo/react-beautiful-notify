@@ -1,15 +1,12 @@
 let defaults = {
   wrapperId: 'notification-wrapper',
-  background: '#333',
+  background: '#ffffff',
   animationDuration: 300,
-  mainColor: '#333',
+  mainColor: '#a0a0a0',
   timeout: 5000,
   type: 'success'
 }
 
-function mergeOptions(options) {
-  return Object.assign(defaults, options)
-  defaults = Object.assign(defaults, options)
-}
 
-export { defaults, mergeOptions }
+
+export { defaults}

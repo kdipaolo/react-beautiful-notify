@@ -6,10 +6,12 @@ class App extends React.Component {
     const options = {
       type: 'confirmation',
       timeout: 2000,
-      background: '#4caf50',
-      color: '#fff'
+      mainColor: 'green'
     }
-    notify.show('Are you sure?', options)
+    function confirm(){
+      console.log('hello')
+    }
+    notify.show('Are you sure?', options, confirm)
   }
   render() {
     return (
