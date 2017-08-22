@@ -1,10 +1,13 @@
 {
   "name": "react-beautiful-notify",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "files": ["dist"],
-  "url" : "https://github.com/kdipaolo/react-beautiful-notify",
+  "repository": {
+    "type": "git",
+    "url" : "https://github.com/kdipaolo/react-beautiful-notify"
+  },
   "scripts": {
     "start": "webpack-dev-server",
     "docs": "NODE_ENV=production webpack -p",

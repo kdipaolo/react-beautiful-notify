@@ -1,5 +1,5 @@
 import React from 'react'
-import Container, { notify } from 'react-beautiful-notify'
+import Location, { notify } from 'react-beautiful-notify'
 
 class App extends React.Component {
   handleClick = () => {
@@ -14,7 +14,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Container />
+        <Location />
         <h1>React Beautiful Notify Testing</h1>
         <button onClick={this.handleClick}>Click!</button>
       </div>
