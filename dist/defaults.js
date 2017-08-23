@@ -5,31 +5,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 var defaults = {
   wrapperId: 'notification-wrapper',
-  background: '#333',
+  background: '#ffffff',
   animationDuration: 300,
-  mainColor: '#333',
+  mainColor: '#a0a0a0',
   timeout: 5000,
-  colors: {
-    error: {
-      color: '#E85742'
-    },
-    success: {
-      color: '#55CA92'
-    },
-    warning: {
-      color: '#F5E273'
-    },
-    confirmation: {
-      color: '#4990E2'
-    }
-  }
+  type: 'success'
 };
 
-function mergeOptions(options) {
-  console.log('options', options);
-  return Object.assign(defaults, options);
-  exports.defaults = defaults = Object.assign(defaults, options);
-}
-
 exports.defaults = defaults;
-exports.mergeOptions = mergeOptions;

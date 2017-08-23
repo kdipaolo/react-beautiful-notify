@@ -6,11 +6,17 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _templateObject = _taggedTemplateLiteral(['\n  position: fixed;\n  width: 50%;\n  margin: 0 auto;\n  right: 0px;\n  left: 0px;\n  text-align: center;\n  border-bottom-left-radius: 10px;\n  border-bottom-right-radius: 10px;\n  background: ', ';\n  padding: 5% 0;\n  max-width: 560px;\n  color: ', ';\n  border: 5px solid ', ';\n  font-size: 22px;\n  transition: 0.5s all ease;\n  top: 0px;\n  transform: translateY(-108px);\n  ', ';\n\n  ', ';\n'], ['\n  position: fixed;\n  width: 50%;\n  margin: 0 auto;\n  right: 0px;\n  left: 0px;\n  text-align: center;\n  border-bottom-left-radius: 10px;\n  border-bottom-right-radius: 10px;\n  background: ', ';\n  padding: 5% 0;\n  max-width: 560px;\n  color: ', ';\n  border: 5px solid ', ';\n  font-size: 22px;\n  transition: 0.5s all ease;\n  top: 0px;\n  transform: translateY(-108px);\n  ', ';\n\n  ', ';\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n    transform: translateY(0px);\n  '], ['\n    transform: translateY(0px);\n  ']),
-    _templateObject3 = _taggedTemplateLiteral(['\n  background: none;\n  border: 2px solid ', ';\n  color: ', ';\n  margin: 2%;\n  border-radius: 5px;\n  padding: 2%;\n  font-size: 14px;\n  text-transform: uppercase;\n'], ['\n  background: none;\n  border: 2px solid ', ';\n  color: ', ';\n  margin: 2%;\n  border-radius: 5px;\n  padding: 2%;\n  font-size: 14px;\n  text-transform: uppercase;\n']),
-    _templateObject4 = _taggedTemplateLiteral(['\nmargin: 3% auto;\ndisplay: block;\n'], ['\nmargin: 3% auto;\ndisplay: block;\n']),
-    _templateObject5 = _taggedTemplateLiteral(['\n  ', '\n'], ['\n  ', '\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  position: fixed;\n  z-index: 99999999999;\n  width: 50%;\n  margin: 0 auto;\n  right: 0px;\n  left: 0px;\n  text-align: center;\n  border-bottom-left-radius: 10px;\n  border-bottom-right-radius: 10px;\n  background: ', ';\n  padding: 2% 0;\n  max-width: 560px;\n  color: ', ';\n  border: 5px solid ', ';\n  font-size: 22px;\n  transition: 0.3s all ease;\n  top: 0px;\n  transform: translateY(-100vh);\n  ', ';\n\n   @media (max-width: 700px) {\n    width: 100%;\n    height: 100vh;\n    position: fixed;\n    padding-top: 30vh;\n    border: none;\n    border-radius: 0px;\n\n  }\n'], ['\n  position: fixed;\n  z-index: 99999999999;\n  width: 50%;\n  margin: 0 auto;\n  right: 0px;\n  left: 0px;\n  text-align: center;\n  border-bottom-left-radius: 10px;\n  border-bottom-right-radius: 10px;\n  background: ', ';\n  padding: 2% 0;\n  max-width: 560px;\n  color: ', ';\n  border: 5px solid ', ';\n  font-size: 22px;\n  transition: 0.3s all ease;\n  top: 0px;\n  transform: translateY(-100vh);\n  ', ';\n\n   @media (max-width: 700px) {\n    width: 100%;\n    height: 100vh;\n    position: fixed;\n    padding-top: 30vh;\n    border: none;\n    border-radius: 0px;\n\n  }\n']),
+    _templateObject2 = _taggedTemplateLiteral(['\n    transform: translateY(0vh);\n  '], ['\n    transform: translateY(0vh);\n  ']),
+    _templateObject3 = _taggedTemplateLiteral(['\n  transition: 0.5s all ease;\n  transition-delay: 0.35s;\n  display: block;\n  opacity: 0;\n  transform: translateY(-30px);\n  ', ';\n'], ['\n  transition: 0.5s all ease;\n  transition-delay: 0.35s;\n  display: block;\n  opacity: 0;\n  transform: translateY(-30px);\n  ', ';\n']),
+    _templateObject4 = _taggedTemplateLiteral(['\n    opacity: 1;\n    transform: translateY(0px);\n  '], ['\n    opacity: 1;\n    transform: translateY(0px);\n  ']),
+    _templateObject5 = _taggedTemplateLiteral(['\n\n  10%, 90% {\n    transform: translate3d(-1px, 0, 0);\n  }\n\n  20%, 80% {\n    transform: translate3d(2px, 0, 0);\n  }\n\n  30%, 50%, 70% {\n    transform: translate3d(-4px, 0, 0);\n  }\n\n  40%, 60% {\n    transform: translate3d(4px, 0, 0);\n  }\n'], ['\n\n  10%, 90% {\n    transform: translate3d(-1px, 0, 0);\n  }\n\n  20%, 80% {\n    transform: translate3d(2px, 0, 0);\n  }\n\n  30%, 50%, 70% {\n    transform: translate3d(-4px, 0, 0);\n  }\n\n  40%, 60% {\n    transform: translate3d(4px, 0, 0);\n  }\n']),
+    _templateObject6 = _taggedTemplateLiteral(['\n  background: none;\n  border: 2px solid ', ';\n  color: ', ';\n  margin: 2%;\n  border-radius: 5px;\n  padding: 2%;\n  font-size: 14px;\n  text-transform: uppercase;\n  transform: translate3d(0, 0, 0);\n  backface-visibility: hidden;\n  perspective: 1000px;\n  ', ';\n'], ['\n  background: none;\n  border: 2px solid ', ';\n  color: ', ';\n  margin: 2%;\n  border-radius: 5px;\n  padding: 2%;\n  font-size: 14px;\n  text-transform: uppercase;\n  transform: translate3d(0, 0, 0);\n  backface-visibility: hidden;\n  perspective: 1000px;\n  ', ';\n']),
+    _templateObject7 = _taggedTemplateLiteral(['\n    animation: ', ' 1s 1s cubic-bezier(.36,.07,.19,.97) both;\n  '], ['\n    animation: ', ' 1s 1s cubic-bezier(.36,.07,.19,.97) both;\n  ']),
+    _templateObject8 = _taggedTemplateLiteral(['\n  50%  {transform: scale(1.4);}\n'], ['\n  50%  {transform: scale(1.4);}\n']),
+    _templateObject9 = _taggedTemplateLiteral(['\nmargin: 3% auto;\ndisplay: block;\n', ';\n'], ['\nmargin: 3% auto;\ndisplay: block;\n', ';\n']),
+    _templateObject10 = _taggedTemplateLiteral(['\n  animation: ', ' 0.5s 1s forwards;\n'], ['\n  animation: ', ' 0.5s 1s forwards;\n']),
+    _templateObject11 = _taggedTemplateLiteral(['\n  ', '\n'], ['\n  ', '\n']);
 
 var _react = require('react');
 
@@ -19,8 +25,6 @@ var _react2 = _interopRequireDefault(_react);
 var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
-
-var _defaults = require('../defaults');
 
 var _styledComponents = require('styled-components');
 
@@ -41,33 +45,37 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
 var Wrapper = _styledComponents2.default.div(_templateObject, function (props) {
-  return props.options.background;
+  return (0, _polished.rgba)(props.options.background, 0.7);
 }, function (props) {
-  return props.options.color;
+  return props.options.mainColor;
 }, function (props) {
-  return (0, _polished.darken)(0.05, props.options.background);
+  return (0, _polished.darken)(0.05, (0, _polished.rgba)(props.options.background, 0.7));
 }, function (props) {
   return props.show && (0, _styledComponents.css)(_templateObject2);
-}, '' /* @media (max-width: 700px) {
-      width: 100%;
-      height: 100vh;
-      position: fixed;
-      padding-top: 30vh;
-      background: rgba(255, 255, 255, 0.7);
-      } */);
+});
+var AnimationWrapper = _styledComponents2.default.span(_templateObject3, function (props) {
+  return props.show && (0, _styledComponents.css)(_templateObject4);
+});
+var shake = (0, _styledComponents.keyframes)(_templateObject5);
 
-var Button = _styledComponents2.default.button(_templateObject3, function (props) {
-  return props.options.color;
+var Button = _styledComponents2.default.button(_templateObject6, function (props) {
+  return props.options.mainColor;
 }, function (props) {
-  return props.options.color;
+  return props.options.mainColor;
+}, function (props) {
+  return props.show && (0, _styledComponents.css)(_templateObject7, shake);
 });
 
-var icon = (0, _styledComponents.css)(_templateObject4);
+var pop = (0, _styledComponents.keyframes)(_templateObject8);
 
-var SuccessIcon = (0, _styledComponents2.default)(_reactFeather.CheckCircle)(_templateObject5, icon);
-var WarningIcon = (0, _styledComponents2.default)(_reactFeather.AlertCircle)(_templateObject5, icon);
-var ErrorIcon = (0, _styledComponents2.default)(_reactFeather.XCircle)(_templateObject5, icon);
-var ConfirmationIcon = (0, _styledComponents2.default)(_reactFeather.Info)(_templateObject5, icon);
+var icon = (0, _styledComponents.css)(_templateObject9, function (props) {
+  return props.show && (0, _styledComponents.css)(_templateObject10, pop);
+});
+
+var SuccessIcon = (0, _styledComponents2.default)(_reactFeather.CheckCircle)(_templateObject11, icon);
+var WarningIcon = (0, _styledComponents2.default)(_reactFeather.AlertCircle)(_templateObject11, icon);
+var ErrorIcon = (0, _styledComponents2.default)(_reactFeather.XCircle)(_templateObject11, icon);
+var ConfirmationIcon = (0, _styledComponents2.default)(_reactFeather.Info)(_templateObject11, icon);
 
 /* React Notification Component */
 
@@ -121,17 +129,16 @@ var Toast = function (_React$Component) {
     value: function render() {
       var text = this.props.text;
 
-
       return _react2.default.createElement(
         Wrapper,
         { show: this.state.show, options: this.props.options },
         _react2.default.createElement(
-          'span',
-          null,
-          this.props.options.type === 'success' && _react2.default.createElement(SuccessIcon, { size: 60 }),
-          this.props.options.type === 'warning' && _react2.default.createElement(WarningIcon, { size: 60 }),
-          this.props.options.type === 'error' && _react2.default.createElement(ErrorIcon, { size: 60 }),
-          this.props.options.type === 'confirmation' && _react2.default.createElement(ConfirmationIcon, { size: 60 }),
+          AnimationWrapper,
+          { show: this.state.show },
+          this.props.options.type === 'success' && _react2.default.createElement(SuccessIcon, { show: this.state.show, size: 60 }),
+          this.props.options.type === 'warning' && _react2.default.createElement(WarningIcon, { show: this.state.show, size: 60 }),
+          this.props.options.type === 'error' && _react2.default.createElement(ErrorIcon, { show: this.state.show, size: 60 }),
+          this.props.options.type === 'confirmation' && _react2.default.createElement(ConfirmationIcon, { show: this.state.show, size: 60 }),
           text,
           this.props.options.type === 'confirmation' && _react2.default.createElement(
             'div',
@@ -139,12 +146,12 @@ var Toast = function (_React$Component) {
             _react2.default.createElement('br', null),
             _react2.default.createElement(
               Button,
-              { options: this.props.options, onClick: this.props.confirm },
+              { show: this.state.show, options: this.props.options, onClick: this.props.confirm },
               'Confirm'
             ),
             _react2.default.createElement(
               Button,
-              { options: this.props.options, onClick: this.props.deny },
+              { show: this.state.show, options: this.props.options, onClick: this.props.deny },
               'Cancel'
             )
           )

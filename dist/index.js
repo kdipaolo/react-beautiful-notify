@@ -25,7 +25,6 @@ var _defaults = require('./defaults');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/* Render React component */
 function renderToast(text, options, confirm) {
   var target = document.getElementById(_defaults.defaults.wrapperId);
 
@@ -37,24 +36,21 @@ function renderToast(text, options, confirm) {
   _reactDom2.default.render(_react2.default.createElement(_Toast2.default, { text: text, options: options, confirm: handleConfirm, deny: hide }), target);
 }
 
-/* Unmount React component */
 function hide() {
   var target = document.getElementById(_defaults.defaults.wrapperId);
   _reactDom2.default.unmountComponentAtNode(target);
 }
 
 function show(text, options, confirm) {
-  // Use default timeout if not set.
-  var renderTimeout = options.timeout || _defaults.defaults.timeout;
+  var mergedOptions = Object.assign(_defaults.defaults, options);
 
-  // Render Component with Props.
-  renderToast(text, options, renderTimeout, confirm);
+  renderToast(text, mergedOptions, confirm);
 
-  if (options.type !== 'confirmation') {
+  if (mergedOptions.type !== 'confirmation') {
     // Unmount react component after the animation finished.
     setTimeout(function () {
       hide();
-    }, renderTimeout + _defaults.defaults.animationDuration);
+    }, mergedOptions.timeout + mergedOptions.animationDuration);
   }
   return true;
 }
