@@ -9,7 +9,7 @@ npm install react-beautiful-notify
 ```
 
 ## Demo
-Coming soon...
+https://kdipaolo.github.io/notify/
 
 ## Usage
 ```
