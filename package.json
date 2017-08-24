@@ -1,11 +1,9 @@
 {
   "name": "react-beautiful-notify",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "main": "index.js",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "repository": {
     "type": "git",
     "url": "https://github.com/kdipaolo/react-beautiful-notify"
